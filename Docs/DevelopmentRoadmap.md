@@ -241,9 +241,13 @@ WuXueMaJong.Core     ← 纯 C# 规则引擎（牌墙、动作、胡牌判定、
 
 ---
 
-## 当前项目状态（2026-11-19）
+## 当前项目状态（2026-11-20）
 
 - Unity 6.3（6000.3.29f1），URP 2D 管线，新 Input System
-- 仅有默认场景与模板，尚无游戏代码
 - Git 已初始化，已推送至 GitHub：`https://github.com/HumorZhang/WuXueMaJong`
 - `.gitignore` 已配置（排除 Library/Temp/Logs/UserSettings 及生成文件）
+- **单机版 MVP 已完成**：武汉红中赖子杠、玩家 + 3 AI、口口翻计分、结算与连庄/轮庄
+  - 核心引擎：`Assets/Mahjong/Core/`（纯 C#，可复用于联网服务器）
+  - 规则说明：`Docs/WuhanRules.md`
+  - 测试：43 项 EditMode 单元测试 + PlayMode 冒烟测试
+- 下一步：联网架构（阶段 4）
